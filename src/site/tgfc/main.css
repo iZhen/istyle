@@ -1,0 +1,30 @@
+/* @import "normalize.css"; */
+
+html, body {
+  font-family: 'Source Han Sans SC', Sans-Serif;
+}
+
+.ad_headerbanner, .ad_text, .portalbox, /* ad */
+#baiduad, #googlead,
+#g201, #g207, #g209,
+.postauthor .avatar, /* 头像&签名 */
+.postauthor .profile, .postauthor p,
+.signatures,
+#leftadv, /* 侧边栏 */
+.postmessage + hr,
+.postmessage .t_msgfont + br,
+.postmessage .t_msgfont + br + br,
+.postmessage .t_msgfont + br + br + div,
+body > .wrap > br,
+#footer + div
+{
+  display: none;
+}
+
+#content_main { margin-right: 0; }
+.postmessage {
+  min-height: auto !important;
+}
+/*
+.postmessage .t_msgfont + * { display: none;}
+*/

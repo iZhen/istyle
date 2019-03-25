@@ -1,0 +1,79 @@
+@import "normalize.css";
+
+html, body {
+  font-family: 'Source Han Sans SC', Sans-Serif;
+}
+
+/* hide */
+img.avatar, /* avatar */
+.catetitle,
+.headline,
+#toptopics,
+#fast_post_c,
+#footer,
+.c2 .x /* sign */
+{
+  display: none !important;
+}
+
+/* top nav */
+#m_nav { margin-top: 15px; }
+#mainmenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px -3px #000;
+  transform: translateY(-45px);
+  transition: all .3s;
+  &:hover {
+    border-bottom: 1px solid #ead5bc;
+    transform: translateY(0);
+    &:after {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  }
+  &:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    background: #591804;
+    transform: translateY(0);
+    transition: all .3s;
+  }
+}
+
+/* banner */
+#custombg {
+  display: none;
+}
+.catenew {
+  padding: 0;
+  background-image: none !important;
+  border: 0;
+  border-radius: 0;
+  iframe {
+    display: none;
+  }
+}
+
+/* d3 banner */
+#toppedtopic {
+  max-height: none !important;
+}
+
+/* icon */
+.smile_ac {
+  width: 20px;
+  vertical-align: -3px;
+}
+
+.postcontent img {
+  max-width: 300px;
+}
