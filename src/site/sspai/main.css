@@ -1,0 +1,73 @@
+@import "normalize.css";
+
+html, body {
+  font-family: 'Source Han Sans SC', Sans-Serif;
+}
+
+/* hide content */
+#header, /* header */
+#footer, /* footer */
+.top-banner, /* 顶部banner */
+.side, /* 侧边栏 */
+.main > .series-carousel-card /* 付费栏目滚动 */
+{
+  display: none !important;
+}
+
+/* home page */
+#home {
+  .main {
+    width: 100%;
+    margin-right: 0;
+    .article-card {
+      position: relative;
+      float: left;
+      width: 47%;
+      margin: 0 1.5% 30px;
+      dt, /* 头部 */
+      .meta, /* 底部内容 */
+      .load-more-wrapper.loading {
+        display: none;
+      }
+      .banner {
+        img:first-child {
+          min-height: 159.89px;
+        }
+      }
+      .series-logo {
+        left: 50%;
+      }
+      .title {
+        height: 3rem;
+        overflow: hidden;
+        font-size: 1rem;
+      }
+      .desc {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 10px;
+        visibility: hidden;
+        color: #222;
+        text-shadow: 0 0 10px rgba(0, 0, 0, .7);
+        font-size: 16px;
+      }
+      &:hover {
+        .banner {
+          background-color: transparent;
+          img:first-child {
+            opacity: .1;
+          }
+        }
+        .desc {
+          visibility: visible;
+        }
+      }
+    }
+    .load-more-wrapper {
+      clear: both;
+    }
+  }
+}
