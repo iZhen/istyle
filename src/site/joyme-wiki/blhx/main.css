@@ -1,0 +1,26 @@
+@import "normalize.css";
+
+html, body {
+  font-family: 'Source Han Sans SC', Sans-Serif;
+}
+
+/* global */
+body {
+  background: #f0f0f0 !important;
+}
+
+/* 黑幕 */
+.heimu {
+  background: #000;
+  color: #fff;
+}
+
+/* hidden content */
+#footer,
+#carouselExampleIndicators, /* banner */
+#bulin, /* bulin */
+.sprite-bulin,
+.bl-r-adv, /* bird on side */
+.share-right {
+  display: none !important;
+}
