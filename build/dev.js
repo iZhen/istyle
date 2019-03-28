@@ -6,7 +6,7 @@ const postcssMiddleware = require('postcss-middleware');
 const plugins = require('./plugins');
 
 const app = express();
-const port = 3000;
+const port = 7701;
 const root = path.join(__dirname, '../src/site');
 
 app.use(/.*\.css$/, postcssMiddleware({
